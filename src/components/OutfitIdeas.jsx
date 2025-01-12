@@ -1,8 +1,37 @@
 import React from 'react';
+import outfit1 from '../assets_2/Dresses.jpg';
+import outfit2 from '../assets_2/Jakets.jpg';
+import outfit3 from '../assets_2/Blazer.jpg';
+import outfit4 from '../assets_2/Cardigan.jpg';
+import outfit5 from '../assets_2/Hoodies & Sweatshirts.jpg';
+import outfit6 from '../assets_2/Sweaters.jpg';
+
+// Gunakan nama unik untuk gambar pria jika berbeda
+import menOutfit1 from '../assets_2/Jackets & Coats.jpg';
+import menOutfit2 from '../assets_2/Sweaters.png';
+import menOutfit3 from '../assets_2/Polo.png';
+import menOutfit4 from '../assets_2/Hoodies & Sweatshirts.png';
+import menOutfit5 from '../assets_2/Shirts.png';
+import menOutfit6 from '../assets_2/T-Shirts.png';
 
 const OutfitIdeas = () => {
-  const womenTops = ['Dresses', 'Jackets', 'Blazers', 'Blouses & Shirts', 'Cardigans', 'Hoodies & Sweatshirts', 'Sweaters', 'T-Shirts & Tops'];
-  const menTops = ['Jackets & Coats', 'Sweaters', 'Polos', 'Hoodies & Sweatshirts', 'Shirts', 'T-Shirts'];
+  const womenTops = [
+    { name: 'Dresses', img: outfit1 },
+    { name: 'Jackets', img: outfit2 },
+    { name: 'Blazers', img: outfit3 },
+    { name: 'Cardigans', img: outfit4 },
+    { name: 'Hoodies & Sweatshirts', img: outfit5 },
+    { name: 'Sweaters', img: outfit6 },
+  ];
+
+  const menTops = [
+    { name: 'Jackets & Coats', img: menOutfit1 },
+    { name: 'Sweaters', img: menOutfit2 },
+    { name: 'Polo', img: menOutfit3 },
+    { name: 'Hoodies & Sweatshirts', img: menOutfit4 },
+    { name: 'Shirts', img: menOutfit5 },
+    { name: 'T-Shirts', img: menOutfit6 },
+  ];
 
   return (
     <div className="bg-yellow-200 py-12 px-6">
@@ -24,8 +53,12 @@ const OutfitIdeas = () => {
         <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
           {womenTops.map((item, index) => (
             <div key={index} className="p-2 text-center">
-              <div className="h-16 w-16 bg-gray-300 rounded mx-auto"></div>
-              <p className="mt-2 text-gray-600">{item}</p>
+              <img
+                src={item.img}
+                alt={item.name}
+                className="h-16 w-16 rounded mx-auto object-cover"
+              />
+              <p className="mt-2 text-gray-600">{item.name}</p>
             </div>
           ))}
         </div>
@@ -37,8 +70,12 @@ const OutfitIdeas = () => {
         <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
           {menTops.map((item, index) => (
             <div key={index} className="p-2 text-center">
-              <div className="h-16 w-16 bg-gray-300 rounded mx-auto"></div>
-              <p className="mt-2 text-gray-600">{item}</p>
+              <img
+                src={item.img}
+                alt={item.name}
+                className="h-16 w-16 rounded mx-auto object-cover"
+              />
+              <p className="mt-2 text-gray-600">{item.name}</p>
             </div>
           ))}
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 // Import images from the 'assets' folder
 import outfitImage1 from "../assets/outfit1.jpg"; 
-import outfitImage2 from "../assets/outfit1.jpg";
+import outfitImage2 from "../assets/outfit2.1.jpg";
 import outfitImage3 from "../assets/outfit3.jpg"; 
 import outfitImage4 from "../assets/outfit4.jpg"; 
 

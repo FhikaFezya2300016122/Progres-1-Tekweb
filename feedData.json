@@ -1,0 +1,30 @@
+{
+  "feeds": [
+    {
+      "id": "1736168197350",
+      "image": "/uploads/1736168197337.jpeg",
+      "caption": "bajuju",
+      "category": "bajuju",
+      "tags": [],
+      "uploadedAt": "2025-01-06T12:56:37.351Z"
+    },
+    {
+      "id": "1736168355271",
+      "image": "/uploads/1736168355262.jpeg",
+      "caption": "baju",
+      "category": "baju",
+      "tags": [],
+      "uploadedAt": "2025-01-06T12:59:15.272Z"
+    },
+    {
+      "id": "1736409501891",
+      "image": "/uploads/1736409501868.jpeg",
+      "caption": "baju",
+      "category": "baju",
+      "tags": [
+        "bajuuu"
+      ],
+      "uploadedAt": "2025-01-09T07:58:21.891Z"
+    }
+  ]
+}
